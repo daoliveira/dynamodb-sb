@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  dynamodb-sb:
+    image: dynamodb-sb
+    build: .
+    ports:
+      - 8080:8080
+    environment: 
+      - AMAZON_DYNAMODB_ENDPOINT=http://dynamodb:8000
+
+  dynamodb:
+    image: amazon/dynamodb-local
+    ports:
+      - 8000:8000
+
