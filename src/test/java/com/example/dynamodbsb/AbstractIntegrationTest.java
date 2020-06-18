@@ -2,6 +2,8 @@ package com.example.dynamodbsb;
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
+import com.daoliveira.dynamodbsb.Application;
+
 import org.junit.ClassRule;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

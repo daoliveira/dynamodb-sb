@@ -1,13 +1,15 @@
 version: '3.4'
 
 services:
-  dynamodb-sb:
-    image: dynamodb-sb
-    build:
-      context: .
-      dockerfile: Dockerfile
-    environment:
-      JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y
+  dynamodb-spring-data-rest-sb:
+    image: dynamodb-spring-data-rest-sb
+    build: .
     ports:
-      - 8080
+      - 8080:8080
       - 5005:5005
+    environment:
+      - JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y
+      - AMAZON_DYNAMODB_ENDPOINT=http://dynamodb:8000
+
+  dynamodb:
+    image: amazon/dynamodb-local

@@ -1,4 +1,4 @@
-package com.example.dynamodbsb.config;
+package com.daoliveira.dynamodbsb.config;
 
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;

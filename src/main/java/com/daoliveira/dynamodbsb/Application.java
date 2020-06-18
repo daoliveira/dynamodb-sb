@@ -1,4 +1,4 @@
-package com.example.dynamodbsb;
+package com.daoliveira.dynamodbsb;
 
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
@@ -24,7 +24,7 @@ import org.springframework.core.type.filter.AnnotationTypeFilter;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, // No JPA
 		DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class })
-@EnableDynamoDBRepositories(basePackages = "com.example.dynamodbsb.repository")
+@EnableDynamoDBRepositories(basePackages = "com.daoliveira.dynamodbsb.repository")
 public class Application {
 
 	public static void main(String[] args) {

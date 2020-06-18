@@ -1,6 +1,6 @@
-package com.example.dynamodbsb.repository;
+package com.daoliveira.dynamodbsb.repository;
 
-import com.example.dynamodbsb.entity.Product;
+import com.daoliveira.dynamodbsb.entity.Product;
 
 import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;

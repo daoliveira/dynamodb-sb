@@ -1,4 +1,4 @@
-package com.example.dynamodbsb.entity;
+package com.daoliveira.dynamodbsb.entity;
 
 import java.util.Objects;
 

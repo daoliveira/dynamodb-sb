@@ -3,7 +3,7 @@ package com.example.dynamodbsb;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
-import com.example.dynamodbsb.repository.ProductRepository;
+import com.daoliveira.dynamodbsb.repository.ProductRepository;
 
 import org.junit.Before;
 import org.junit.Test;

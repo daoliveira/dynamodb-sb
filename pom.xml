@@ -7,8 +7,8 @@
     <version>2.3.0.RELEASE</version>
     <relativePath />
   </parent>
-  <groupId>com.example</groupId>
-  <artifactId>dynamodb-sb</artifactId>
+  <groupId>com.daoliveira</groupId>
+  <artifactId>dynamodb-spring-data-rest-sb</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>demo</name>
   <description>DynamoDB + Spring Data REST + HAL Explorer demo</description>
